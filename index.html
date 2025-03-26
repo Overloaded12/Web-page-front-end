@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mupage</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoHive - Knowledge Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>InfoHive</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#trending">Trending</a></li>
+      <li><a href="#support">Support</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" style="margin-top: 40px;">
+    <div class="hero-content">
+      <h2>Welcome to InfoHive</h2>
+      <p>Your go-to hub for the latest news, tech insights, and financial wisdom</p>
+      <div class="hero-btns">
+        <a href="register.html" class="btn">Join Now</a>
+        <a href="#articles" class="btn-outline">Explore Articles</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="stat-item">
+      <h3>10K+</h3>
+      <p>Monthly Readers</p>
+    </div>
+    <div class="stat-item">
+      <h3>500+</h3>
+      <p>Published Articles</p>
+    </div>
+    <div class="stat-item">
+      <h3>50+</h3>
+      <p>Expert Contributors</p>
+    </div>
+  </section>
+
+  <!-- Featured Articles -->
+  <section id="articles" class="featured-articles">
+    <div class="section-header">
+      <h2>Latest Articles</h2>
+      <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="articles-container">
+      <div class="article">
+        <div class="article-img" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+          <span class="category-badge">Technology</span>
+        </div>
+        <div class="article-content">
+          <h3>Tech Innovations 2025</h3>
+          <p>Exploring the latest breakthroughs in technology that will change how we live and work in the coming year.</p>
+          <div class="article-meta">
+            <span><i class="far fa-clock"></i> 5 min read</span>
+            <span><i class="far fa-calendar"></i> June 15, 2025</span>
+          </div>
+          <button class="article-btn">Read More</button>
+        </div>
+      </div>
+      <div class="article">
+        <div class="article-img" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+          <span class="category-badge">Finance</span>
+        </div>
+        <div class="article-content">
+          <h3>Financial Tips for Beginners</h3>
+          <p>Essential strategies to manage your money effectively and build long-term wealth, even with limited resources.</p>
+          <div class="article-meta">
+            <span><i class="far fa-clock"></i> 7 min read</span>
+            <span><i class="far fa-calendar"></i> June 10, 2025</span>
+          </div>
+          <button class="article-btn">Read More</button>
+        </div>
+      </div>
+      <div class="article">
+        <div class="article-img" style="background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+          <span class="category-badge">Health</span>
+        </div>
+        <div class="article-content">
+          <h3>Mental Wellness in Digital Age</h3>
+          <p>How to maintain mental health while navigating our increasingly digital lifestyles and work environments.</p>
+          <div class="article-meta">
+            <span><i class="far fa-clock"></i> 8 min read</span>
+            <span><i class="far fa-calendar"></i> June 5, 2025</span>
+          </div>
+          <button class="article-btn">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter for weekly insights and exclusive content</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Register as a Blogger Section -->
+  <section id="register-blogger" class="register-blogger-section">
+    <div class="container">
+      <h2>Become an InfoHive Blogger</h2>
+      <p>Share your expertise and help spread knowledge across our community. Fill out the form below to get started!</p>
+      <form class="blogger-registration-form">
+        <div class="form-group">
+          <label for="blogger-name">Full Name</label>
+          <input type="text" id="blogger-name" name="blogger-name" required />
+        </div>
+        <div class="form-group">
+          <label for="blogger-email">Email</label>
+          <input type="email" id="blogger-email" name="blogger-email" required />
+        </div>
+        <div class="form-group">
+          <label for="blogger-bio">Short Bio (max 200 words)</label>
+          <textarea id="blogger-bio" name="blogger-bio" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Apply to Become a Blogger</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Support Section -->
+  <section id="support" class="support-section">
+    <h2>Support Our Work</h2>
+    <p>Help us continue providing quality content by contributing</p>
+    <div class="support-options">
+      <div class="support-card">
+        <div class="support-icon">
+          <i class="fas fa-coffee"></i>
+        </div>
+        <h3>Buy Me a Coffee</h3>
+        <p>Small donations help keep the site running</p>
+        <button class="support-btn" data-method="coffee">Donate $3</button>
+      </div>
+      <div class="support-card">
+        <div class="support-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>MPESA Donation</h3>
+        <p>Send your MPESA donation to: <strong>0743956104</strong></p>
+        <button class="support-btn" data-method="mpesa">Donate via MPESA</button>
+      </div>
+      <div class="support-card">
+        <div class="support-icon">
+          <i class="fab fa-paypal"></i>
+        </div>
+        <h3>PayPal</h3>
+        <p>International supporters can donate via PayPal</p>
+        <button class="support-btn" data-method="paypal">Donate via PayPal</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Topics -->
+  <section id="trending" class="trending-section">
+    <h2>Trending Topics</h2>
+    <div class="trending-tags">
+      <a href="#" class="tag">#AIRevolution</a>
+      <a href="#" class="tag">#Crypto2025</a>
+      <a href="#" class="tag">#GreenTech</a>
+      <a href="#" class="tag">#RemoteWork</a>
+      <a href="#" class="tag">#SmartCities</a>
+      <a href="#" class="tag">#Fintech</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Readers Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <div class="testimonial-content">
+          <p>"InfoHive has become my daily source for tech updates. The quality of articles is consistently excellent."</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J." />
+          <h4>Sarah J.</h4>
+          <p>Tech Entrepreneur</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-content">
+          <p>"The financial advice I've found here has helped me grow my savings by 30% in just six months."</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T." />
+          <h4>Michael T.</h4>
+          <p>Financial Analyst</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>InfoHive</h3>
+        <p>Your trusted source for technology, finance, and lifestyle content.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#support">Support Us</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section about-founder">
+        <h3>About the Founder</h3>
+        <p>Roy Washika created InfoHive to share valuable knowledge with the community.</p>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> 0743956104</p>
+          <p><i class="fas fa-envelope"></i> roywashika@gmail.com</p>
+          <a href="https://wa.me/254743956104" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 InfoHive. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
